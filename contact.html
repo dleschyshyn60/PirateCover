@@ -1,0 +1,71 @@
+<!--------w-----------
+
+    Project 4
+    Name: Donald Leschyshyn
+    Date: April 26 2023
+    Description: Project 4 website build and deployment
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<title>Lazy Pirates</title>
+		<link rel="stylesheet" href="p1styles.css" >
+		<script src="formValidate.js"></script>
+	</head>
+	<main>
+		<div id = "container">			
+			<header id ="topbar">			
+			</header>
+			<div id="mainheading">
+				
+				<h1 id="pirates">The Pirates Cove</h1>
+			</div>
+			<nav id = "headingnav" aria-label="headingnav">
+				<ul>
+					<li ><a href="index.html">HOME</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li class = "currentNav"><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+			<div id="mainbody">		
+					<div id="currentpage">
+						<h2 class ="topheading">Send us a raven!</h2>						
+						<form id="contact-form" action="index.html" method="post">
+							<div>
+							  <label for="name">Name:</label>
+							  <input type="text" id="name" name="name" required>
+							  
+							</div>
+							<div>
+							  <label for="phone">Phone Number: enter a 10-digit phone number</label>
+							  <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+							  
+							</div>
+							<div>
+							  <label for="email">Email:</label>
+							  <input type="email" id="email" name="email" required>
+							  
+							</div>
+							<div>
+							  <label for="comments">Comments:</label>
+							  <textarea id="comments" name="comments" required></textarea>
+							
+							</div>
+							<div>
+							  <input type="submit" value="Submit">
+							  <input type="reset" value="Reset">
+							</div>
+						  </form>									
+					</div>
+				</div>
+			</div>
+			<footer>		
+				<ul id = "footlinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</footer>
+	</main>
+</html>
